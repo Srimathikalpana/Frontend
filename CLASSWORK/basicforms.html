@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Components</title>
+</head>
+<body bgcolor="pink">
+    <form name="Basic forms" action="#">
+        <div>
+            <label>First name : </label>
+            <input type="text" name="firstname" placeholder="Enter the First name" />
+        </div>
+        <div>
+            <label>Email : </label>
+            <input type="email" name="emailid" placeholder="Enter the email id" />
+        </div>
+        <div>
+            <label>Mobile Num : </label>
+            <input type="tel" name="mobile" placeholder="Enter the Mobile" />
+        </div>
+        <div>
+            <label>Password : </label>
+            <input type="password" name="pass" placeholder="Enter the password here" />
+        </div>
+        <div>
+            <label>Date : </label>
+            <input type="date" name="dateofbirth"/>
+        </div>
+        <div>
+            <label>Select a Department : </label>
+            <select name="department" multiple>
+<!-- if multiple attribute not given we can choose any one department only -->
+                <option>CSE</option><option>IT</option><option>AI&DS</option><option>AI&ML</option>
+            </select>
+        </div>
+        <div>
+            <label>Select college option : </label>
+            <input type="checkbox" name="college" value="psg"/>PSG Tech
+            <input type="checkbox" name="college" value="kumaraguru"/>Kumaraguru
+            <input type="checkbox" name="college" value="cit"/>CIT
+        </div>
+        <div>
+            <label>Upload certificate</label>
+            <input type="file" name="document"/>
+        </div>
+        <div>
+            <label>Choose city</label>
+            <input type="radio" name="city" value="chennai"/>Chennai
+            <input type="radio" name="city" value="cbe"/>Coimbatore
+        </div>
+        <!-- <input type="submit" value="Apply"/>
+        <input type="reset" value="Clear"/> -->
+    <!-- either options can be used to create a button -->
+        <button type="submit">Apply</button>
+        <button type="reset">Reset</button>        
+        <input type="button" value="SignUp"
+
+    </form>
+</body>
+</html>

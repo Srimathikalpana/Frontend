@@ -1,0 +1,14 @@
+Cascading stylesheet : css
+	used to change colors,margins,size,fonts,borders,shadows,alignments
+
+Applying CSS:
+	inline	>>using style property/attribute	
+	internal	>>style for the whole docement can be written inside the 		head section  <style></style>
+	external	>>style for the any document that reuses same properties can 		be written in seperate file.css and can be linked to desired 		HTML document using <link/>
+
+                                  property:value ;
+
+CSS seletors when performing internal or external:
+	element name
+	idname	>>individual elements
+	classname  >>group of elements

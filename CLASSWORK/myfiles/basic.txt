@@ -1,0 +1,14 @@
+srivignesh
+print()
+a=10
+b=20
+c=a+b
+print(c)
+happiness
+print(Happiness)
+
+
+.py
+.java
+.c
+.txt
