@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            align-self: center;
+            border-style: dashed;
+            background-image: linear-gradient(rgb(56, 248, 56),yellow);
+        }
+        table {
+            color:blueviolet;   
+            text-transform: capitalize;  
+            font-style: bold;
+            font-size: 25px;  
+         }
+         input {
+            padding-left: 100px;
+            padding-top: 8px;
+         }
+    </style>
+</head>
+<body>
+    <font align="center" color="brown"><h1><u>Students registration form for HTML</u></h1></font>
+    <font face="Arial Rounded MT" >
+        <form>
+        <table cellpadding="8px" cellspacing="5px">
+            <tr>
+                <td>Firstname</td>
+                <td>
+                    <input type="text" name="firstname" placeholder="First name"/>(Max 50 characters allowed)
+                </td>
+            </tr>
+            <tr>
+                <td>Lastname</td>
+                <td>
+                    <input type="text" name="lastname" placeholder="Last name"/>(Max 50 characters allowed)
+                </td>
+            </tr>
+            <tr>
+                <td>Email id</td>
+                <td>
+                    <input type="email" name="Email" placeholder="email id"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile number</td>
+                <td>
+                    <input type="tel" name="mobile" placeholder="Mobile no."/>(10 digits only allowed)
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    Male<input type="radio" name="Gender" value="Male"/>
+                    Female<input type="radio" name="Gender" value="Female"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Date of birth</td>
+                <td>
+                    <select name="date">
+                        <option selected hidden>Date</option> <option>1</option><option>2</option><option>3</option><option>4</option>
+                        <option>5</option><option>6</option><option>7</option><option>8</option>
+                        <option>9</option><option>10</option><option>11</option><option>12</option>
+                        <option>13</option><option>14</option><option>15</option><option>16</option>
+                        <option>17</option><option>18</option><option>19</option><option>20</option>
+                        <option>21</option><option>22</option><option>23</option><option>24</option>
+                        <option>25</option><option>26</option><option>27</option><option>28</option>
+                        <option>29</option><option>30</option><option>3</option>
+                    </select>
+                    <select name="Month">
+                        <option selected hidden>Month</option> <option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option>
+                        <option>May</option><option>Jun</option><option>Jul</option><option>Aug</option>
+                        <option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option>
+                    </select>
+                    <select name="year">
+                        <option selected hidden>year</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option>
+                        <option>2005</option><option>2006</option><option>2007</option><option>2008</option>
+                        <option>2009</option><option>2010</option><option>2011</option><option>2012</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>address</td>
+                <td name="address"><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td>city</td>
+                <td>
+                    <input type="text" name="city" placeholder="City"/>(Max 50 characters allowed)
+                </td>
+            </tr>
+            <tr>
+                <td>pincode</td>
+                <td>
+                    <input type="text" name="pincode" placeholder="(ex.) 636-004"/>
+                </td>
+            </tr>
+            <tr>
+                <td>state</td>
+                <td>
+                    <input type="text" name="state" placeholder="State"/>(Max 50 characters allowed)
+                </td>
+            </tr>
+            <tr>
+                <td>country</td>
+                <td>
+                    <input type="text" name="country" placeholder="Country"/>(Max 50 characters allowed)
+                </td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td><input type="radio" name="Qualification" value="10th completed"/>10th completed</td></tr>
+                <tr><td></td><td><input type="radio" name="Qualification" value="12th completed"/>12th completed</td>
+                <tr><td></td><td><input type="radio" name="Qualification" value="bachelor"/>Graduated(bachelor)</td></tr>
+                <tr><td></td><td><input type="radio" name="Qualification" value="master"/>Graduated(master)</td></tr>
+                <tr><td></td><td><input type="radio" name="Qualification" value="phd"/>Phd</td></tr>
+                <tr>
+                    <td>Course applied for</td>
+                    <td><input type="checkbox" name="Course" value="python"/>python</td></tr>
+                    <tr><td></td><td><input type="checkbox" name="checkbox" value="Java"/>Java</td>
+                    <tr><td></td><td><input type="checkbox" name="checkbox" value="c++"/>c++</td></tr>
+                    <tr><td></td><td><input type="checkbox" name="checkbox" value="c"/>c</td></tr>
+                    <tr><td></td><td><input type="checkbox" name="checkbox" value="frontend"/>frontend</td></tr>
+        </table>
+    </form>
+</font>
+</body>
+</html>
