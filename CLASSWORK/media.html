@@ -8,17 +8,42 @@
         .kalpana{
             text-align: center;
         }
+        .audvid{
+            display: flex;
+            justify-content: space-around;
+            /*align-items: center;*/
+        }
+        .audvid audio{
+            align-self: center;
+        }
+        .kalpanas{
+            margin-top: 50px;
+            display: flex;
+            flex: row;
+            justify-content: space-evenly;
+        }
+        .kalpanas img{
+            padding: 1px;
+            height: 250px;
+            width: min-content;
+        }
+        #ig1{
+            flex:6;
+        }
+        #ig2{
+            flex:6;
+        }
         h1{
             background-image: url(../HOMEWORK/hwfiles/download.jpeg);
         }
-        img{
-            width: 250px;
-            /*height: 100vh;*/
-            height: 250px;
+        /* img{ 
+            width: 100px;
+            /*height: 100vh;
+            height: 100px;
             padding: 10px 2px 1px 20px;
-            border:10px;
+            border:8px;
             border-style: dotted;
-        }
+        } */
     </style>
 </head>
 <body bgcolor="yellow">
@@ -29,14 +54,20 @@
     <hr color="blue"/>
     <h2>Aesthetic pictures</h2>
     <hr color="blue"/>
-    <div align="center">
-        <img width="50%" height="500px" src="myfiles/desktop-wallpaper-laptop-pinterest-37-pastel-pink-aesthetic.jpg" alt="pastel pictures"/>
+    <div class="kalpanas">
+        <img id="ig2" src="myfiles/desktop-wallpaper-laptop-pinterest-37-pastel-pink-aesthetic.jpg" alt="pastel pictures"/>
+        <img id="ig1" src="myfiles/desktop-wallpaper-laptop-pinterest-37-pastel-pink-aesthetic.jpg" alt="pastel pictures"/>
     </div>
     <h2>Mathematics chapter 1</h2>
     <hr color="blue"/>
+<div class="audvid">
     <video controls autoplay muted width="100%" height="500px">
         <source src="../HOMEWORK/wonderlafiles/Maverick wonderla rides kochi.mp4">
     </video>
+    <audio controls>
+        <source src="myfiles/Chinnanjiru-Nilave-MassTamilan.dev.mp3">
+    </audio>
+</div>
     <h2>Chinnanjiru nilave</h2>
     <hr color="blue"/>
     <audio controls>
