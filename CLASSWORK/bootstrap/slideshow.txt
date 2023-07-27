@@ -1,0 +1,10 @@
+slideshow:
+	1.carousel Indicators
+		>>target,slide to
+	2.carousel Inner
+	          >> carousel item
+		>carousel caption
+	         >> carousel item
+		>carousel caption
+		.....
+	3.Prev, next buttons
