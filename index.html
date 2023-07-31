@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg sticky-top bg-secondary navbar-light">
@@ -255,232 +256,92 @@
     <br/>
     <hr/>
     <br/>
-    <div id="policyform">
-        <font color="blue" face="Castellar"><h1 align="center">Make your insurance policy</h1>
-            <h2 align="center">A partnership for the future of healthcare!</h2></font>
-                <img align="left" width="20%" height="200px" src="HOMEWORK/wonderlafiles/star health img.png"/>
-                <img align="right" width="20%" height="200px" src="HOMEWORK/wonderlafiles/lic logo.jpeg"/>
-            <form method="post">
-                <table align="center" cellspacing="5px" cellpadding="8px">
-                    <tbody>
-                        <tr>
-                            <td><font color="blue" face="Castellar">Proposer details : </font></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Proposer name</label><br/>
-                                <input type="text" name="name" placeholder="Name"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Address</label><br/>
-                                <input type="text" name="Address" placeholder="Address"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Email id</label><br/>
-                                <input type="email" name="email" placeholder="emailid"/>
-                            </td>
-                            <td>
-                                <label>Mobile no.</label><br/>
-                                <input type="tel" name="Mobile" placeholder="Mobile no."/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><font color="blue" face="Castellar">Policy details : </font></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Policy type</label><br/>
-                                <select name="type">
-                                    <option selected hidden>Choose Any One</option>
-                                    <option>Jeevan labh</option>
-                                    <option>Jeevan umang</option>
-                                    <option>Jeevan labh</option>
-                                    <option>Star assure</option>
-                                    <option>Jeevan Shanthi</option>
-                                </select>
-                            </td>
-                            <td>
-                                <label>Family size</label><br/>
-                                <select name="fsize">
-                                    <option>1A</option><option>2A</option><option>2A+1C</option><option>2A+2C</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Period of insurance</label><br/>
-                                <label>From</label>
-                                <input type="date" name="from" />
-                            </td>
-                            <td>
-                                <br/>
-                                <label>To</label>
-                                <input type="date" name="to"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><font color="blue" face="Castellar">Insured person details : </font>(Fill it according to Family size)</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table align="left" cellspacing="5px" cellpadding="12px"><tbody>
-                        <tr>
-                            <td><label>1A Name</label><br/>
-                            <input type="text" name="ipname" placeholder="Insured person name"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Gender</label><br/>
-                                <input type="radio" name="gender" value="M"/>Male
-                                <input type="radio" name="gender" value="F"/>Female
-                            </td>
-                            <td>
-                                <label>D.O.B.</label><br/>
-                                <input type="date" name="dob"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Height(in cm)</label><br/>
-                                <input type="text" name="height" placeholder="Height"/>
-                            </td>
-                            <td>
-                                <label>Weight(in kg)</label><br/>
-                                <input type="text" name="weight" placeholder="Weight"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label>Relationship with Proposer(HBVJHVBZDJHVZDHJ)</label><br/>
-                            <select name="Relationship">
-                                <option>Self</option><option>Father</option><option>Mother</option>
-                                <option>Husband</option><option>Wife</option>
-                                <option>Daughter</option><option>Son</option>
-                                <option>Father-in-law</option><option>Mother-in-law</option>
-                            </select>
-                            </td>
-                        </tr> <tr>
-                            <td><label>2A Name</label><br/>
-                            <input type="text" name="ipname" placeholder="Insured person name"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Gender</label><br/>
-                                <input type="radio" name="gender" value="M"/>Male
-                                <input type="radio" name="gender" value="F"/>Female
-                            </td>
-                            <td>
-                                <label>D.O.B.</label><br/>
-                                <input type="date" name="dob"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Height(in cm)</label><br/>
-                                <input type="text" name="height" placeholder="Height"/>
-                            </td>
-                            <td>
-                                <label>Weight(in kg)</label><br/>
-                                <input type="text" name="weight" placeholder="Weight"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label>Relationship with Proposer</label><br/>
-                            <select name="Relationship">
-                                <option>Self</option><option>Father</option><option>Mother</option>
-                                <option>Husband</option><option>Wife</option>
-                                <option>Daughter</option><option>Son</option>
-                                <option>Father-in-law</option><option>Mother-in-law</option>
-                            </select>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table align="right" cellspacing="5px" cellpadding="12px"><tbody>
-                <tr>
-                    <td><label>1st C Name</label><br/>
-                    <input type="text" name="ipname" placeholder="Insured person name"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Gender</label><br/>
-                        <input type="radio" name="gender" value="M"/>Male
-                        <input type="radio" name="gender" value="F"/>Female
-                    </td>
-                    <td>
-                        <label>D.O.B.</label><br/>
-                        <input type="date" name="dob"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Height(in cm)</label><br/>
-                        <input type="text" name="height" placeholder="Height"/>
-                    </td>
-                    <td>
-                        <label>Weight(in kg)</label><br/>
-                        <input type="text" name="weight" placeholder="Weight"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label>Relationship with Proposer(HBVJHVBZDJHVZDHJ)</label><br/>
-                    <select name="Relationship">
-                        <option>Self</option><option>Father</option><option>Mother</option>
-                        <option>Husband</option><option>Wife</option>
-                        <option>Daughter</option><option>Son</option>
-                        <option>Father-in-law</option><option>Mother-in-law</option>
+    <div class="container" id="policyform">
+        <font face="Castellar" color="blue"><h1 class="text-center">Make my policy.com</h1></font>
+        <div class="row justify-content-center parent">
+            <form class="col-lg-6 col-md-8 col-sm-12 shadow-lg p-4">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6 col-md-12">
+                        <label>First Name</label>
+                        <input class="form-control" type="text" placeholder="Enter the First name" name="firstName" />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <label>Last Name</label>
+                        <input class="form-control" type="text" placeholder="Enter the Last name" name="lastName" />
+                    </div>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input class="form-control" type="email" placeholder="Enter the Primary email" name="primary" />
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-6 col-md-12">
+                        <label>Mobile Number</label>
+                        <input type="tel" class="form-control" placeholder="Mobile number"/>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                       <label>Whatsapp number</label>
+                       <input type="tel" class="form-control" placeholder="Whatsapp number"/>
+                    </div>
+                </div>
+                <div>
+                    <label>Address</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-6 col-md-12">
+                        <label>Aadhar card number</label>
+                        <input type="tel" class="form-control" placeholder="Aadhar number"/>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <label>Pan card number</label>
+                        <input type="text" class="form-control" placeholder="Pan number"/>
+                    </div>
+                </div>
+                <div>
+                    <label>Select the policy type</label>
+                    <select class="form-select" name="policy name">
+                        <option hidden selected>Select Policy</option>
+                        <option>Jeevan umang</option>
+                        <option>Jeevan Shanthi</option>
+                        <option>Jeevan labh</option>
+                        <option>Star assure</option>
+                        <option>Jeevan Anand</option>
                     </select>
-                    </td>
-                </tr> 
-                <tr>
-                    <td>
-                        <label>2nd C Name</label><br/>
-                    <input type="text" name="ipname" placeholder="Insured person name"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Gender</label><br/>
-                        <input type="radio" name="gender" value="M"/>Male
-                        <input type="radio" name="gender" value="F"/>Female
-                    </td>
-                    <td>
-                        <label>D.O.B.</label><br/>
-                        <input type="date" name="dob"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>Height(in cm)</label><br/>
-                        <input type="text" name="height" placeholder="Height"/>
-                    </td>
-                    <td>
-                        <label>Weight(in kg)</label><br/>
-                        <input type="text" name="weight" placeholder="Weight"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label>Relationship with Proposer</label><br/>
-                    <select name="Relationship">
-                        <option>Self</option><option>Father</option><option>Mother</option>
-                        <option>Husband</option><option>Wife</option>
-                        <option>Daughter</option><option>Son</option>
-                        <option>Father-in-law</option><option>Mother-in-law</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td ><button type="submit">Register now</button></td>
-                </tr>
-                </tbody>
-            </table>
-        </form>
-    </div>  
+                </div>
+                <div>
+                    <label>Upload policy form</label>
+                    <input type="file" class="form-control" placeholder="Choose file"/>
+                </div>
+                <div class="form-check-inline">
+                    <label>Policy type</label>
+                    <input class="form-check-input" type="radio" name="type" value="online"/>Online
+                    <input class="form-check-input" type="radio" name="type" value="offline"/>Offline
+                </div>
+                <div class="mt-3 row justify-content-around">
+                    <button class="col-lg-3 col-md-5 btn btn-primary" type="submit">
+                        <i class="bi bi-check2-all"></i>
+                    </button>
+                    <button class="col-lg-3 col-md-5 btn btn-danger" type="reset">
+                        <i class="bi bi-x-square-fill"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="container-fluid bg-secondary text-light mt-3">
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-3 col-md-6 sol-sm-12">
+                <p>M.THIRUMALAIRAJA,<br/>19,LIC Colony,<br/>Hotel Vasantham road,<br/>Salem-636 004</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 col-sm-12 align-self-center">
+                <ul style="list-style: none;" class="list-group">
+                    <li>LIC and STAR health</li>
+                    <li>Allied insurance policy</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <h5 class="text-center">All Copyrights &copy; reserved to THIRUMALAIRAJA 2023</h5>
 </body>
 </html>
