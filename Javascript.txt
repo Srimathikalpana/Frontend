@@ -1,0 +1,52 @@
+HTML	>>Components
+CSS	>>Style
+Bootstrap >>Styled components
+
+Javascript:interactive based web page
+	client side events>>data validations,styles,form validations,actions....
+
+variabales >>store the data
+	var NAME=value > JS origin
+	let NAME=value > ES6(express script 6)
+	const NAME=value > constant
+Data types:
+	Number,String,Object(JSON),array,boolean
+	ex
+	var app_name="Razak Mohamed.S" >>string
+	var app_name=987 >>number	
+	var app_name=98.7 >>number
+	var app_name={"year":2019,"name":"Razak" } >>                                       		JavaScriptObjectNotation
+	var app_name=[33,34,35] >> array
+	var app_name=False/true >> Boolean
+
+functions >> perform specific operation
+	def Func_name():
+		#function body(in python)
+	function Func_name(){
+		#function body
+	} (in js)
+
+inline:
+	<script>
+		............
+	</script>
+
+internal:
+	<head></head>
+
+external:
+	file.js
+	
+	html:
+		<script src="location and name of js file"></script>
+
+writing an output:
+	1. console.log("")
+
+
+BuiltIn:
+	window		
+	document	>> page>> DocumentObjectModel >> valid, style
+		selectors:
+			id, name
+	location..
