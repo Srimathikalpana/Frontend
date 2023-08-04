@@ -49,4 +49,6 @@ BuiltIn:
 	document	>> page>> DocumentObjectModel >> valid, style
 		selectors:
 			id, name
-	location..
+	location...
+input>> prompt("enter the value","")
+		 
