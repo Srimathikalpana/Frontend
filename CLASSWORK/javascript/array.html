@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+        let myassets=new Array(17,"Srimathikalpana",152.5,true,{"two-wheeler":"Wego","car":2020,"land":[1500,2000,850]})
+       // let myassets=[17,"Srimathikalpana",152.5,True,{"two-wheeler":"Wego","car":2020,"land":[1500,2000,850]}]
+       /* 
+       function show(){ //normal function
+        for(var index=0;index<myassets.length);index++){
+            console.log(myassets[index])
+        }
+       }
+       */
+       const show=()=>{  //fat function
+        /*for(var index=0;index<myassets.length);index++){
+           //console.log(myassets[index])
+           alert(myassets[index])
+        }
+        */
+        /*myassets.map(iterate)
+            const iterate=(i,v)=>{
+            console.log(v+" "+i)
+        }*/
+        var content=""
+        myassets.map((value,index)=>{
+            content+=value+"<br/>"
+        })
+        document.getElementById("view").innerHTML=content
+        }
+        
+        const add=()=>{
+            var item=document.getElementById("data").value
+            myassets.push(item)
+            document.getElementById("view").innerText="Item "+item+" has been updated"
+        }
+        //reading by index
+        const read=()=>{
+            console.log(myassets.length)
+            var item=document.getElementById("data").value
+            item=parseInt(item)
+            if(item<myassets.length&&item>-1){
+                document.getElementById("view").innerText="Item is "+myassets[item]
+            }
+            else{
+                document.getElementById("view").innerText="Invalid index"
+            }
+        }
+        var desired
+        const find=()=>{
+            var position=document.getElementById("data").value
+            position=parseInt(position)
+            desired=position
+        }
+        const update=()=>{
+            var data=document.getElementById("data").value
+            myassets[desired]=data
+        }
+        const erase=()=>{
+            var position=document.getElementById("data").value
+            position=parseInt(position)
+            /*var newarray=myassets.filter((val,ind)=>{
+                return ind!=posiion
+            })
+            document.write(newarray)*/
+            myassets=myassets.filter((val,ind)=>{
+                return ind!=position
+            })
+        }
+    </script>
+</head>
+<body>
+    <p id="view"></p>
+    <button onclick="show()">View</button>
+    <input type="text" id="data"/>
+    <button onclick="add()">Adding new element</button>
+    <button onclick="read()">Read</button>
+    <button onclick="find()">Find</button>
+    <button onclick="update()">Update</button>
+    <button onclick="erase()">Erase</button>
+</body>
+</html>

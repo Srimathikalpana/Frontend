@@ -50,5 +50,16 @@ BuiltIn:
 		selectors:
 			id, name
 	location...
-input>> prompt("enter the value","")
-		 
+
+Input >> prompt("enter the value","")
+
+functions:types
+
+JavaScriptObjectNotation:
+{
+	"key":value,
+	"key":{
+		....'.
+	}
+	"key":[]
+}
