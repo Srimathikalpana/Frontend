@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <script>
+        function china(){
+        var inr=document.getElementById("INR").value
+        inr=parseInt(inr)
+        var answer=inr/11.55
+        document.getElementById("result").value="Answer is: "+answer+" Yuan"
+        }function us(){
+        var inr=document.getElementById("INR").value
+        inr=parseInt(inr)
+        var answer=inr/82.81
+        document.getElementById("result").value="Answer is: "+answer+" Dollar"
+        }
+        function dubai(){
+        var inr=document.getElementById("INR").value
+        inr=parseInt(inr)
+        var answer=inr/22.55
+        document.getElementById("result").value="Answer is: "+answer+" Emirati Dirham"
+        }
+        function europe(){
+        var inr=document.getElementById("INR").value
+        inr=parseInt(inr)
+        var answer=inr/90.93
+        document.getElementById("result").value="Answer is: "+answer+" Euro"
+        }
+        function reset(){
+            document.getElementById("number").value=""
+        }
+</script>
+</head>
+<body>
+    <input type="number" id="INR" placeholder="INR" onchange="reset">
+    <button onclick="china()">China</button>
+    <button onclick="us()">US</button>
+    <button onclick="dubai()">Dubai</button>
+    <button onclick="europe()">Europe</button>
+    <br/>
+    <br/>
+    <output id="result"></output>
+</body>
+</html>
