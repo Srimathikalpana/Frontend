@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM and events</title>
+    <script>
+        function findIT(){
+            //dom
+            const salary=document.getElementById("num1").value
+            //console.log(salary+" "+typeof(salary))
+            //alert(typeof(salary))
+            var ctc=parseFloat(salary)
+            var tax=0.0
+            if(ctc>=2.5&&ctc<5){
+                tax=5
+                alert("for "+salary+" lakhs salary,person has to pay 5% tax")
+            }
+            else if(ctc>=5&&ctc<10){
+                tax=10
+                alert("for "+salary+" lakhs salary,person has to pay 10% tax")
+            }
+            else if(ctc>=10&&ctc<15){
+                tax=15
+                alert("for "+salary+" lakhs salary,person has to pay 15% tax")
+            }
+            else if(ctc>=15&&ctc<20){
+                tax=20 
+                alert("for "+salary+" lakhs salary,person has to pay 20% tax")
+            }
+            else if(ctc>=20){
+                tax=30
+                alert("for "+salary+" lakhs salary,person has to pay 30% tax")
+            }
+            else{
+                tax=0
+                alert("for "+salary+" lakhs salary,person no need to pay tax")
+            }
+            var payable=(ctc*tax)
+            document.getElementById("result").value=payable+"k is tax value"
+        }
+        function reset(){
+            document.getElementById("result").value=""
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="enter the annual income(in lakhs)" onchange="reset()"/>
+    <button onclick="findIT()">Check IT</button>
+    <output id="result"></output>
+    <!-- where onclick and onchange are events-->
+</body>
+</html>

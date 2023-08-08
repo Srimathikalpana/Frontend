@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+    <script>
+        let currentUser=""
+        function allow(){
+            currentUser=prompt("Enter the username ","")
+            alert(currentUser)
+        }
+        function passing(userName){
+            currentUser=userName
+            alert(userName)
+        }
+        function perform(alpha,beta,gamma){
+            alpha>beta&&alpha>gamma?
+            document.getElementById("text").innerText=alpha+" is greater":
+            beta>gamma?document.getElementById("text").innerText=beta+" is greater":
+            document.getElementById("text").innerText=gamma+" is greater"
+        }
+        function receiveback(){
+            var hi=document.getElementById("shade")
+            hi.style.backgroundColor=hi.value
+            hi.style.boxShadow="15px 15px 15px yellow"
+            hi.style.fontSize="50px"
+        }
+    </script>
+</head>
+<body>
+    <p id="text">Result is</p>
+    <button onclick="allow()">Basic</button>
+    <button onclick="passing('Srimathikalpana')">Argument</button>
+    <button onclick="perform(55,72,92)">Bigger</button>
+    <input type="text" id="shade" onchange="receiveback()"/>
+</body>
+</html>

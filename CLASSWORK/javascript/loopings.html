@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loopings</title>
+    <script>
+        function generate(){
+            var number=document.getElementById("table").value
+            var content="";
+            // 10
+            number=parseInt(number)
+            /*
+            // initialization
+            var start=1// 1 to 10
+            while(start<=10){
+                content+=start+"X"+number+"="+(start*number)+"<br/>"
+                start++;//means start+=1
+            }
+            */
+            for(var start=1;start<=10;start++){
+                content+=number+"X"+start+"="+(start*number)+"<br/>"
+            }
+
+            document.getElementById("show").innerHTML=content
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="table" />
+    <button onclick="generate()">Generate Table</button>
+    <p id="show"></p>
+</body>
+</html>
