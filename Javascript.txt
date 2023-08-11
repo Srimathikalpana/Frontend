@@ -63,3 +63,25 @@ JavaScriptObjectNotation:
 	}
 	"key":[]
 }
+alpha=input("djfbvjkbfkv")
+
+
+functions:
+fat arrow/arrow
+
+function hai(){
+	// body of the function
+}
+
+const/let/var functionName=(param)=>{
+	// body of the function
+}
+
+Array:
+var VARNAME=[v1,v2,v3,........]
+var VARNAME=new Array();
+
+push
+pop
+filter(index,value)	>> condition based filter
+map(index,value)	>> traverse
