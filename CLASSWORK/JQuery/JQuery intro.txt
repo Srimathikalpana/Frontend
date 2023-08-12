@@ -27,4 +27,10 @@ JQuery: CDN
         form components>> value >> val()
 
     1. validation
+     1. validation:
+        regex
+            [a-zA-Z]    >> Only alphabets
+            [0-9]       >> Only numbers
+            [!@#@#]     >> Only specific characters
+            ...
     2. navigation
