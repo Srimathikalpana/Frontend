@@ -1,0 +1,30 @@
+JQuery: CDN
+    google>> 
+    jquery>> open source
+
+    $(document).ready(()=>{
+        $(objects/id/tagname/classname).event(()=>{
+
+        })
+    })
+
+    window, location
+
+    onclick >> click
+    ondblclick  >> dblclick
+    onsubmit >> submit
+
+    selectors:
+        id>> getElementById >> $("#id").event(()=>{})
+        class>> getElementsByClassName()    >> $(".class").event(()=>{})
+        Tagname>> getElementsByTagName()    >> $("tagname").event(()=>{})
+        form inputs >>                          $("input[name=inputelementname]")
+
+    properties:
+        text elements>> innerHTML/ innerText        >> text()/html()
+        styles      >> css("property","value")
+        attribute   >> attr("key","value")
+        form components>> value >> val()
+
+    1. validation
+    2. navigation

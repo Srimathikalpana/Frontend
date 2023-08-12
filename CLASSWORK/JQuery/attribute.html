@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery changing attributes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $("button").click(()=>{
+                $(location).prop("href","http://www.youtube.com")
+            })
+            $("p").click(()=>{
+                window.print()
+            })
+            /*
+            $("img").click(()=>{
+                $("img").attr("width","500px")
+                $("img").attr("height","200px")
+            })
+            $("img").dblclick(()=>{
+                $("img").attr("width","100px")
+                $("img").attr("height","100px")
+            })
+            */
+            $("img").on(
+                $("img").click(()=>{
+                    $("img").attr("width","500px")
+                    $("img").attr("height","200px")
+                }),
+                $("img").dblclick(()=>{
+                    $("img").attr("width","100px")
+                    $("img").attr("height","100px")
+                })
+            )
+        })
+    </script>
+</head>
+<body>
+    <img src="../myfiles/desktop-wallpaper-laptop-pinterest-37-pastel-pink-aesthetic.jpg" width="100px"height="100px"/>
+    <br/>
+    <button>YouTube</button>
+    <p>Print this page</p>
+</body>
+</html>
