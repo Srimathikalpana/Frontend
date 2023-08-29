@@ -24,12 +24,14 @@ $(document).ready(()=>{
         var valid=true
 
         // form validation
-        if(fname.length==0){
+        if(fname.length==0)
+        {
             $("#errFname").html("<br/>FirstName shouldn't empty")
             $("#errFname").show()
             valid=false
         }
-        if(lname.length==0){
+        if(lname.length==0)
+        {
             $("#errLname").html("<br/>LastName shouldn't empty")
             $("#errLname").show()
             valid=false
