@@ -8,6 +8,7 @@ $(document).ready(()=>{
         $("#erraddress").hide()
         $("#erraadhar").hide()
         $("#errpolicy").hide()
+        $("#errpan").hide()
         $("#errfile").hide()
         $("#errtype").hide()
 
@@ -61,8 +62,8 @@ $(document).ready(()=>{
             valid=false
         }
         if(pan.length==0){
-            $("errpan").html("<br/>Pan no. shouldn't empty")
-            $("errpan").show()
+            $("#errpan").html("<br/>Pan no. shouldn't empty")
+            $("#errpan").show()
             valid=false
         }
         // if(policy=="Select Policy"){
